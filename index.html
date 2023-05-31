@@ -17,7 +17,12 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
   </head>
-  <body style="background-color: rgb(42, 35, 35);color: rgb(250, 246, 241);">
+  <body
+    style="
+      background-color: rgba(32, 27, 27, 0.963);
+      color: rgba(16, 209, 247, 0.722);
+    "
+  >
     <div id="mocha"></div>
     <script>
       // the mocha test style to use - we use BDD - Behviour Driven Development
@@ -27,22 +32,24 @@
     </script>
 
     <!-- the function to be tested -->
-    <script src="greet.js" charset="utf-8"></script>
+    <script src="js functions/greet.js" charset="utf-8"></script>
     <!-- followed by the tests -->
     <script src="test/greet.tests.js" charset="utf-8"></script>
-    
-    <script src="countAllFromTown.js" charset="utf-8"></script>
+
+    <script src="js functions/countAllFromTown.js" charset="utf-8"></script>
     <script src="test/countAllFromTown.test.js" charset="utf-8"></script>
 
-    <script src="fromWhere.js" charset="utf-8"></script>
+    <script src="js functions/fromWhere.js" charset="utf-8"></script>
     <script src="test/fromWhere.test.js" charset="utf-8"></script>
 
-    <script src="countAllPaarl.js" charset="utf-8"></script>
+    <script src="js functions/countAllPaarl.js" charset="utf-8"></script>
     <script src="test/countAllPaarl.test.js" charset="utf-8"></script>
 
-    <script src="totalPhoneBill.js" charset="utf-8"></script>
+    <script src="js functions/totalPhoneBill.js" charset="utf-8"></script>
     <script src="test/totalPhoneBill.test.js" charset="utf-8"></script>
 
+    <script src="js functions/isFromBellville.js" charset="utf-8"></script>
+    <script src="test/isFromBellville.test.js" charset="utf-8"></script>
 
     <script>
       // configure and run mocha

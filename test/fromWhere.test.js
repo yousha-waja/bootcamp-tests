@@ -1,21 +1,25 @@
-describe('testing the "fromWhere" function' , function(){
-    it('it does return Bellville' , function(){
+describe('Testing the "fromWhere" function' , function(){
+    it('It does return Bellville.' , function(){
         assert.equal(fromWhere('CY 567489'), 'Bellville'); 
 
     });
 
-    it('it does return Paarl' , function(){
+    it('It does return Paarl.' , function(){
         assert.equal(fromWhere('CJ 453502'), 'Paarl'); 
 
     });
 
-    it('it does return Cape Town' , function(){
+    it('It does return Cape Town.' , function(){
         assert.equal(fromWhere('CA 987504'), 'Cape Town'); 
 
     });
 
-    it('it does return Some other place' , function(){
+    it('It does return Some other place.' , function(){
         assert.equal(fromWhere('GP 568593'), 'Some other place!'); 
 
     });
+
+    it('It does return a string.', () => {
+        assert.typeOf(fromWhere('CA 456 564'), "string", 'The expected value is a string.')
+    })
 }); 
